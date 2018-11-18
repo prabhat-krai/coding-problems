@@ -1,5 +1,5 @@
 """
-This program makes a new array where every element is replace my the total
+This program makes a new array where every element is replaced my the total
 product of all elements divided by the element at that position in original array.
 division is allowed.
 
