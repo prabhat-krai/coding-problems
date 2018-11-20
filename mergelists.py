@@ -1,5 +1,6 @@
 """
-This problem has asked that SORTED lists be merged and the entries should be sorted. 
+This problem has asked that SORTED lists be merged and the entries in the resulting list
+should be sorted. 
 This uses a heap to fasten the process of forming a sorted array as finding the 
 smallest element in a heap is fast. We heapify the the combined list of lists and 
 then pull the smallest among the first elements of all lists and then push it into 
