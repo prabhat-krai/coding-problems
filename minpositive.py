@@ -47,10 +47,6 @@ def form_arrray(arr, size):
 
 
 
-a=[1,3, -4, 2]
+a=[1, 3, -4, 2, -5]
 
 print(form_arrray(a, len(a)))
-
-
-
-
