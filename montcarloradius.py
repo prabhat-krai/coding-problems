@@ -10,7 +10,7 @@ Hint: The basic equation of a circle is x2 + y2 = r2.
 
 import random
 import math
-import numpy as np
+from numpy import mean as m
 # Number of points inside the circle
 inside = 0
 # Total number of points to be generated
@@ -33,4 +33,4 @@ for _ in range(100):
     inside=0
 
 
-print(np.mean(pi_list))
+print(m(pi_list))
