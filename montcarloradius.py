@@ -14,7 +14,7 @@ from numpy import mean as m
 # Number of points inside the circle
 inside = 0
 # Total number of points to be generated
-total = 1000
+total = 100000
 pi_list =[]
 
 for _ in range(100):
@@ -32,5 +32,6 @@ for _ in range(100):
     pi=0.0
     inside=0
 
+pi_final = m(pi_list) 
 
-print(m(pi_list))
+print(round(pi_final,3))
