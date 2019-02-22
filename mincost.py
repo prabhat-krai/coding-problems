@@ -7,3 +7,4 @@ build the nth house with kth color, return the minimum cost which achieves this 
 
 
 """
+
