@@ -18,4 +18,4 @@ def minimum(arr):
 			
     return k
 
-print(findThreeLargestNumbers([7,8,3,11,43,55]))
+print(findThreeLargestNumbers([43,7,8,3,11,55,52,-1000, 55, 55]))
