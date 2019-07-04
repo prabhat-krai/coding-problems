@@ -1,3 +1,8 @@
+#I am taking the  absolute sum of the co_ordinates 
+#A sum is provided to the function and it has to return the  min perimeter of 
+#a square centred at (0,0) to have that sum of co-ordinates available
+
+
 def edgeSum(i):
     edgeSum = 0
     for k in range(-i+1, i):
