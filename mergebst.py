@@ -6,20 +6,20 @@ class Tree:
 
 bst_1 = []
 bst_2 = []
-def getSortedBst(root):
+def getSortedBst(root, bst):
 
     if(root == None):
         return
     getSortedBst(root.left)
-    bst_1.append(root.value)
+    bst.append(root.value)
     getSortedBst(root.right)
 
-    return list_bst
+    return bst
 
-bst_1 = getSortedBst(root1)
-bst_2 = getSortedBst(root2)
+bst_1 = getSortedBst(root1, bst_1)
+bst_2 = getSortedBst(root2, bst_2)
 
-def mergeBstIntoList(bst_1, bst_2) 
+def mergeBstIntoList(bst_1, bst_2):
     i = 0
     j = 0
     final_bst = []
@@ -34,3 +34,6 @@ def mergeBstIntoList(bst_1, bst_2)
     return final_bst
 
 final_bst = mergeBstIntoList(bst_1, bst_2)
+
+
+
