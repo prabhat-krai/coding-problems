@@ -20,8 +20,7 @@ def decode(lex, n):
             count[i] = count[i - 1]
    
         if (lex[i - 2] == '1' or 
-           (lex[i - 2] == '2' and 
-            lex[i - 1] < '7') ):  
+           (lex[i - 2] == '2' and lex[i - 1] < '7') ):  
             count[i] += count[i - 2]
   
     return count[n]
