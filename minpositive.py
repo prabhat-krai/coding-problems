@@ -20,7 +20,6 @@ def seperate_posandneg(num, size):
 
 
 def findMissing(arr, size):
-    
     for i in range(size):
         
         x=int(math.fabs(arr[i]))
@@ -47,6 +46,6 @@ def form_arrray(arr, size):
 
 
 
-a=[1, 3, -4, 2, -5]
+a=[13, -4, 22, -5]
 
 print(form_arrray(a, len(a)))
