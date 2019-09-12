@@ -14,4 +14,9 @@ What if, instead of being able to climb 1 or 2 steps at a time, you could climb 
 positive integers X? For example, if X = {1, 3, 5}, you could climb 1, 3, or 5 steps at a time.
 """
 
-#working
+n = int(input())
+steps = [1,2]
+for i in range(2,n):
+    steps.append(steps[i-1] + steps[i-2])
+
+print(steps[-1])
