@@ -12,5 +12,5 @@ def sum_not_contiguous(arr):
 
     return (max_so_far if max_so_far > current_max else current_max)
 
-arr = [5,5,10,100,1000,50]
+arr = [5,5,10,100,23, -1000,50]
 print(sum_not_contiguous(arr))
