@@ -13,6 +13,6 @@ def getPermutationsHelper(array, nowPerm, permutations):
 			new = array[:i] + array[1+i:]
 			newPerm = nowPerm + [array[i]]
 			getPermutationsHelper(new, newPerm, permutations)
-			
+			 
 
 print(getPermutations([1,2,3]))
