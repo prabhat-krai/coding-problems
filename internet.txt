@@ -1,1 +1,19 @@
 Taking notes on how internet works
+
+
+The basics of the technical infrastructure of the Web and the difference 
+between Internet and the Web.
+
+The number of cables required to connect all the devices is reduced by using 
+Routers.
+
+Then we can form a netword of networks by connecting routers to 
+routers. 
+This is coming close to form a "Internet"
+
+We use MODEM to convert signals in a form that can be transfered on wires
+we have available. 
+
+An ISP is a company that manages some special routers that are all linked 
+together and can also access other ISPs' routers.
+
