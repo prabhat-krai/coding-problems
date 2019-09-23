@@ -17,3 +17,7 @@ we have available.
 An ISP is a company that manages some special routers that are all linked 
 together and can also access other ISPs' routers.
 
+Application Protocols Layer	-- Protocols specific to applications such as WWW, e-mail, FTP, etc.
+Transmission Control Protocol Layer	-- TCP directs packets to a specific application on a computer using a port number.
+Internet Protocol Layer	-- IP directs packets to a specific computer using an IP address.
+Hardware Layer -- 	Converts binary packet data to network signals and back.
