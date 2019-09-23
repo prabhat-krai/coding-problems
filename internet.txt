@@ -21,3 +21,19 @@ Application Protocols Layer	-- Protocols specific to applications such as WWW, e
 Transmission Control Protocol Layer	-- TCP directs packets to a specific application on a computer using a port number.
 Internet Protocol Layer	-- IP directs packets to a specific computer using an IP address.
 Hardware Layer -- 	Converts binary packet data to network signals and back.
+
+HTTP is a connectionless text based protocol. Clients (web browsers) send requests to web servers for web elements such as 
+web pages and images. After the request is serviced by a server, the connection between client and server across the Internet 
+is disconnected. A new connection must be made for each request. Most protocols are connection oriented. This means that 
+the two computers communicating with each other keep the connection open over the Internet. HTTP does not however. 
+Before an HTTP request can be made by a client, a new connection must be made to the server.
+
+
+When applications open a connection to another computer on the Internet, the messages they send (using a 
+specific application layer protocol) get passed down the stack to the TCP layer. TCP is responsible for 
+routing application protocols to the correct application on the destination computer. 
+To accomplish this, port numbers are used. Ports can be thought of as seperate channels on each computer.
+
+TCP, IP is an unreliable, connectionless protocol. IP doesn't care whether a packet gets to it's destination 
+or not. Nor does IP know about connections and port numbers. IP's job is too send and route packets to other 
+computers.
