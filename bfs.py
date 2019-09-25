@@ -1,3 +1,7 @@
+#This performs BFS on a tree
+#Will write one for graphs too
+
+
 class bfs:
     def __init__(self, node_name):
         self.children = []
