@@ -1,5 +1,5 @@
 #This performs BFS on a tree
-#Will write one for graphs too
+#Will write one for graphs too.
 
 
 class bfs:
