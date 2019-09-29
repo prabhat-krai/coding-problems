@@ -14,10 +14,10 @@ def fix_pattern(pattern):
 
     return pattern
 
-def x_and_y_lengths(sentence, dic_xy, x):
+def x_and_y_lengths(length_sentence, dic_xy, x):
     #this finds the possible values of x and y lengths
     x_part = x*dic_xy['x']
-    y_part = len(sentence) - x_part
+    y_part = length_sentence - x_part
     if(y_part/dic_xy['y'] == y_part//dic_xy['y']):
         return len(y_part)
     else:
