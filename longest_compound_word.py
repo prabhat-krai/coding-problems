@@ -48,18 +48,6 @@ class Trie:
                 current = current.children[letter]
         return current.isTerminal
 
-    def output(self, currentPath, indent=''):
-        currentNode=currentPath[-1]
-        if currentNode.isTerminal:
-            word=''.join([node.letter for node in currentPath])
-            print (indent+word)
-            indent+='  '
-        for letter, node in sorted(currentNode.children.items()):
-            self.output(currentPath[:]+[node], indent)
-
-
-
-
 
 def longestWord(words):
     trie = Trie()
