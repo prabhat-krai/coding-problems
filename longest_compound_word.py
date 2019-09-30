@@ -22,7 +22,7 @@ class Trie:
         for letter in word:
             if letter not in current.children:
                 current.children[letter] = Node(letter)
-            current.current.children[letter]
+            current = current.children[letter]
         current.isTerminal = True
 
     def getAllPrefixesofWord(self, word):
@@ -52,7 +52,7 @@ class Trie:
         currentNode=currentPath[-1]
         if currentNode.isTerminal:
             word=''.join([node.letter for node in currentPath])
-            print indent+word
+            print (indent+word)
             indent+='  '
         for letter, node in sorted(currentNode.children.items()):
             self.output(currentPath[:]+[node], indent)
@@ -75,4 +75,18 @@ def longestWord(words):
     while queue:
         word, suffix = queue.popleft()
         if suffix in trie and len(word) > maxLength:
+            longestWord = word
+            maxLength = len(word)
+        else:
+            prefixes = trie.getAllPrefixesofWord(suffix)
+            for prefix in prefixes:
+                queue.append((word, suffix[len(prefix):]))
 
+    return longestWord
+
+
+def test():
+    list_of_words = ['cat', 'cats', 'catsdogcats', 'catxdogcatsrat', 'dog', 'dogcatsdog', 'hippopotamuses', 'rat', 'ratcat', 'ratcatdog', 'ratcatdogcat']
+    assert longestWord(list_of_words) == 'ratcatdogcat'  
+    print("Test passed")
+test()
