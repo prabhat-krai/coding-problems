@@ -5,7 +5,7 @@
 N = 4 #size of the maze 
 
 def printPath(sol):
-
+    sol[N-1][N-1] = 1
     for i in range(N):
         for j in range(N):
             print(sol[i][j], end=" ")
