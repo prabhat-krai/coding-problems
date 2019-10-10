@@ -12,14 +12,16 @@ def printPath(sol):
         print("\n")
 
 def solveMaze(maze):
-    
+    if (maze[0][0] == 0):
+        return False
     solution = [[0 for _ in range(N)] for _ in range(N)]
 
     if(solveMazeHelper(maze, 0, 0, solution) == False):
-        print("Rat cannot cross the maze.")
+        return False
 
     else:
-        printPath(solution)
+        #printPath(solution)  # remove comment for path
+        return True
 
 
 def isSafe(maze, x, y):
@@ -32,7 +34,7 @@ def isSafe(maze, x, y):
 
 def solveMazeHelper(maze, x, y, sol):
     
-    if(x == N-1 and y == N-1):
+    if(x == N-1 and y == N-1 and maze[x][y] == 1):
         return True
 
     if isSafe(maze, x, y):
@@ -48,10 +50,36 @@ def solveMazeHelper(maze, x, y, sol):
         return False
 
 
+def test():
+    maze = [ [1, 0, 1, 0], 
+        [1, 1, 1, 1], 
+        [0, 1, 0, 1], 
+        [1, 1, 1, 1]] 
+    assert solveMaze(maze) == True
 
-maze = [ [1, 0, 1, 0], 
+    maze = [ [1, 0, 1, 0], 
+        [1, 1, 1, 1], 
+        [0, 1, 0, 1], 
+        [1, 1, 1, 0]] 
+    assert solveMaze(maze) == False
+
+    maze = [ [1, 0, 1, 0], 
         [1, 1, 1, 1], 
         [0, 1, 0, 0], 
+        [1, 1, 0, 1]] 
+    assert solveMaze(maze) == False
+
+    maze = [ [0, 0, 1, 0], 
+        [1, 1, 1, 1], 
+        [0, 1, 0, 1], 
         [1, 1, 1, 1]] 
-               
-solveMaze(maze)
+    assert solveMaze(maze) == False
+
+    maze = [ [1, 0, 1, 0], 
+        [1, 1, 0, 1], 
+        [0, 0, 0, 1], 
+        [1, 1, 1, 1]] 
+    assert solveMaze(maze) == False
+    print('Tests passed')
+
+test()
