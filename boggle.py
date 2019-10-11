@@ -1,9 +1,35 @@
+"""
+A 2D array is given and a list of words. 
+Write a program that returns all the words contained in the boggle board.
+"""
+
+
 def boggleBoard(board, words):
     trie = Trie()
-    check_words = {}
     for word in words:
-        check_words[word] = True
-    
+        trie.add(word)
+    finalWords = {}
+    visited = [[False for letter in row] for row in board]
+    for i in range(len(board)):
+        for j in range(len(board[i])):
+            explore(i, j, board, trie.root, visited, finalWords)
+    return list(finalWords.keys())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
