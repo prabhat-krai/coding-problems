@@ -1,20 +1,21 @@
 def boggleBoard(board, words):
+    trie = Trie()
     check_words = {}
     for word in words:
         check_words[word] = True
     
-    x = 0
-    y = 0
-    currWord = board[x][y]
-    findWords(currWord, board, check_words, x+1, y)
-    findWords(currWord, board, check_words, x-1, y)
-    findWords(currWord, board, check_words, x, y+1)
-    findWords(currWord, board, check_words, x+1, y-1)
-    findWords(currWord, board, check_words, x+1, y+1)
-    findWords(currWord, board, check_words, x+1, y-1)
-    findWords(currWord, board, check_words, x-1, y+1)
-    findWords(currWord, board, check_words, x-1, y-1)
 
 
-def findWords(word, board, words, x, y):
+
+class Trie:
+    def __init__(self):
+        self.root = {}
+        self.end_symbol =  "*"
     
+    def add_word(self, word):
+        current  = self.root 
+        for letter in word:
+            if letter not in current:
+                current[letter] = {}
+            current = current[letter]
+        current[self.end_symbol] = word
