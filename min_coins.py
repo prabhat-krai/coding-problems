@@ -9,4 +9,4 @@ def find_min_coins(n, denominations):
     result = -1 if coins[n] == float("inf") else coins[n]
     return result
 
-print(find_min_coins(9,[1,5,10]))
+print(find_min_coins(95,[1,5,10,20]))
