@@ -26,11 +26,11 @@ def rubin_karp(pat, txt, prime_for_hashing, possible_chars):
   
        
         if (i < N-M): 
-            t = (possible_chars*(txt_hash-ord(txt[i])*h) + ord(txt[i + M]))% prime_for_hashing 
+            txt_hash = (possible_chars*(txt_hash-ord(txt[i])*h) + ord(txt[i + M]))% prime_for_hashing 
   
             
-            if (t < 0): 
-                t = t + prime_for_hashing 
+            if (txt_hash < 0): 
+                txt_hash = txt_hash + prime_for_hashing 
   
 
 txt = "Word is Present. Word!"
