@@ -1,6 +1,6 @@
 def getNthFibIter(n):
     # Write your code here.
-	a = [0 , 1]
+	a = [1 , 1]
 	if (n==1):
 		return a[0]
 	if (n==2):
@@ -17,5 +17,5 @@ def getNthFibRec(n):
 		return getNthFibRec(n - 1) + getNthFibRec(n - 2)
 
 
-print(getNthFibIter(64))
-print(getNthFibRec(64))
+print(getNthFibIter(20))
+print(getNthFibRec(20))
