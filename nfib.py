@@ -1,4 +1,4 @@
-def getNthFib(n):
+def getNthFibIter(n):
     # Write your code here.
 	a = [0 , 1]
 	if (n==1):
@@ -10,4 +10,12 @@ def getNthFib(n):
 		
 	return a[n-1]
 
-print(getNthFib(64))
+def getNthFibRec(n):
+	if (n == 1 or n==2):
+		return 1
+	else:
+		return getNthFibRec(n - 1) + getNthFibRec(n - 2)
+
+
+print(getNthFibIter(64))
+print(getNthFibRec(64))
