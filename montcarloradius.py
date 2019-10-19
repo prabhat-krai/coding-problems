@@ -14,7 +14,7 @@ from numpy import mean
 # Number of points inside the circle
 inside = 0
 # Total number of points to be generated
-total = 100000
+total = 10000
 pi_list =[]
 
 for _ in range(100):
