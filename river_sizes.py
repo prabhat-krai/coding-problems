@@ -59,6 +59,9 @@ def test():
             [1,0,1,1,0,1]]
     assert river_sizes(land) == [1,1,1,2,2,2,5]
 
+    land = [[1,0,0,1]]
+    assert river_sizes(land) == [1,1]
+
     print("Test passed")
 
 test()
