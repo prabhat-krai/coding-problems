@@ -14,3 +14,7 @@ def levenshteinDistance(str_1, str_2):
     return changes[-1][-1]
 
 print(levenshteinDistance("Bangalore", "Bengaluru"))
+print(levenshteinDistance("India", "Bharat"))
+print(levenshteinDistance("Python", "Pythonic"))
+print(levenshteinDistance("Flask", "Spring"))
+
