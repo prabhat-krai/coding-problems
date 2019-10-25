@@ -12,5 +12,11 @@ def sum_not_contiguous(arr):
 
     return (max_so_far if max_so_far > current_max else current_max)
 
-arr = [5,5,10,100,23, -1000,50]
-print(sum_not_contiguous(arr))
+def test():
+    assert sum_not_contiguous([5,5,10,100,23, -1000,50]) == 155
+    assert sum_not_contiguous([5,5,-10,-100,-23, -1000,-50]) == 5
+    assert sum_not_contiguous([5,5,-10,-100,-23, -1000,50]) == 55
+
+    print('tests passed')
+
+test()
