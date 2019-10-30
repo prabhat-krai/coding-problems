@@ -19,8 +19,10 @@ def sort_012(a, arr_size):
       
       
   
- 
-arr = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1] 
-arr_size = len(arr) 
-arr = sort_012(arr, arr_size) 
-print(arr) 
+def test():
+    arr = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1] 
+    arr_size = len(arr) 
+    assert sort_012(arr, arr_size) == [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2]
+    print('test passed')
+
+test()
