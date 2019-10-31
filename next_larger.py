@@ -18,7 +18,8 @@ def test():
     assert next_larger_entry(arr) == [13,21,-1,-1]
     arr = [1,2,3,4,5]
     assert next_larger_entry(arr) == [2,3,4,5,-1]
-
+    arr = []
+    assert next_larger_entry(arr) == []
     print('tests passed')
 
 test()
