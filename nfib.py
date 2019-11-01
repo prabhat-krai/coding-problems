@@ -39,7 +39,7 @@ def wrapper(func, *args, **kwargs): # wrapper for function to time them
     return wrapped
 
 exp = 1  # number of times to run them
-fib = 40 # which fib number
+fib = 30 # which fib number
 
 wrapped = wrapper(getNthFibIter, fib)
 print("Iteration Time : ",timeit.timeit(wrapped, number = exp))
