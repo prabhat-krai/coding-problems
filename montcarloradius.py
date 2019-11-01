@@ -20,10 +20,11 @@ pi_list =[]
 for _ in range(100):
     for i in range(0, total):
         # Generate random x, y in [0, 1].
-        x2 = random.random()**2
-        y2 = random.random()**2
+        x2 = random.random()**2    #distance from origin of x-axis
+        y2 = random.random()**2    #distance from origin of y-axis
+
         # Increment if inside unit circle.
-        if(math.sqrt(x2 + y2) < 1.0):
+        if(math.sqrt(x2 + y2) < 1.0): # seeing that the resulting point is inside the circle
             inside += 1
 
     # inside / total = pi / 4
