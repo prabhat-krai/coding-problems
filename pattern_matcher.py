@@ -5,8 +5,7 @@
 # This sentence follows the pattern
 
 
-def fix_pattern(pattern):
-    #This makes sure that the pattern starts from 'x'
+def fix_pattern(pattern): #This makes sure that the pattern starts from 'x'
     if(pattern[0] == 'x'):
         return pattern
     else:
