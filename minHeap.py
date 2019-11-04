@@ -44,11 +44,17 @@ class MinHeap:
         return valueToRemove
 
     def insert(self, value):
-	    self.heap.append(value)
+        self.heap.append(value)
         self.siftUp(len(self.heap)-1, self.heap)
-	
-	def swap(self, i, j, heap):
-		heap[i], heap[j] = heap[j], heap[i]
 
+    def swap(self, i, j, heap):
+        heap[i], heap[j] = heap[j], heap[i]
 
-MinHeap([2,3,1])
+    def display(self):
+        return self.heap
+
+def test():
+    a = MinHeap([2,3,1,4])
+    assert a.display() == [1,3,2,4]
+    print("Passed")
+test()
