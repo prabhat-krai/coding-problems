@@ -5,4 +5,4 @@
 
 def find_water_volume(heights):
     for i in range(len(heights)):
-        
+        #trying all permutations
