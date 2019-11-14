@@ -18,6 +18,7 @@ def find_water_volume(heights):
 def test():
     assert find_water_volume([1,5,1,1,1,5,80]) == 25
     assert find_water_volume([1,5,1,1,1,5,4]) == 20
+    assert find_water_volume([]) == 0
     print("Passed")
 
 test()
