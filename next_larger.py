@@ -19,7 +19,7 @@ def test():
     arr = [1,2,3,4,5]
     assert next_larger_entry(arr) == [2,3,4,5,-1]
     arr = []
-    assert next_larger_entry(arr) == []
+    assert next_larger_entry(arr) == [] #edge case
     print('tests passed')
 
 test()
