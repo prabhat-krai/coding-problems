@@ -1,4 +1,4 @@
-class Node: 
+class Node:  #define the structure of our nodes
     def __init__(self, data): 
         self.data = data 
         self.left = None
@@ -55,4 +55,5 @@ root.left.right = Node(12)
 root.left.right.left = Node(10) 
 root.left.right.right = Node(14) 
 target = root.left.right 
+
 printkDistanceNode(root, target, 2) 
