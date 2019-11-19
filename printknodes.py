@@ -12,7 +12,7 @@ def printkDistanceNodeDown(root, k):
     if k == 0 : 
         print (root.data)  
         return 
-      
+    #recurse the tree to find nodes
     printkDistanceNodeDown(root.left, k-1) 
     printkDistanceNodeDown(root.right, k-1) 
   
