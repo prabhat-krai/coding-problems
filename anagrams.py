@@ -12,9 +12,10 @@ def groupAnagrams(words):
             inter_result = [check_against]
             for j in range(i, len(words)):
                 if(j not in index_added):
-                    if(check_if_anagram(check_against, words[j])):
-                        inter_result.append(words[j])
-                        index_added.add(j)
+                    if(len(check_against) == len(words[j])):
+                        if(check_if_anagram(check_against, words[j])):
+                            inter_result.append(words[j])
+                            index_added.add(j)
             result.append(inter_result)
 
     return result
