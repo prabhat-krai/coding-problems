@@ -69,7 +69,7 @@ def test():
             ['I', 'O', 'D'],
              ['W', 'S', 'R']]
 
-    words = ['WORDS', 'WORD', "WINS", "Not present" ]
+    words = ['WORDS', 'WORD', "WINS", "NotPresent"]
     
     print(boggleBoard(board, words) )
     
